@@ -1,0 +1,155 @@
+/*General styling*/
+body{
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, .btn {
+  font-family: 'Raleway', sans-serif;
+}
+
+.btn {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: teal;
+  padding: 15px 30px;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+section {
+  padding: 40px 0;
+}
+
+
+/*Navigation bar*/
+nav {
+  background: black;
+  padding-left: 20px;
+  padding-right: 30px;
+}
+
+nav ul {
+  padding: 0;
+  float: right;
+  margin-top: 50px;
+}
+
+nav ul li {
+  display: inline;
+  padding: 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+
+/*Header*/
+header{
+  background: black url(../images/header-bg.jpg) center no-repeat;
+  color: white;
+  text-align: center;
+  height: 400px;
+  padding-top: 150px;
+}
+
+header h2{
+  margin-bottom: 20px;
+}
+
+/*Features*/
+.features{
+  text-align: center;
+  background-color: white;
+}
+
+.features article{
+  width: 24%;
+  display: inline-block;
+}
+
+.features article .btn{
+  color: teal;
+  background: white;
+  border: 2px solid teal;
+  border-radius: 3px;
+  margin-bottom: 50px;
+}
+
+/*Mockup*/
+.mockup{
+  background: white url(../images/mockup-bg.jpg) center no-repeat;
+  color: white;
+  text-align: center;
+  background-attachment: fixed;
+}
+
+/*Clients*/
+.clients{
+  background: teal;
+  color: white;
+  text-align: center;
+}
+
+.clients ul li {
+  display: inline;
+}
+
+.clients .btn:hover {
+  background: white;
+  color: teal;
+}
+
+.clients .btn{
+  color: white;
+  background: teal;
+  border: 2px solid white;
+  border-radius: 3px;
+  margin-top: 30px;
+  transition: .2s ease;
+}
+
+/*Footer*/
+.footer{
+  background-color: black;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.footer ul{
+  padding-left: 0px;
+}
+
+.footer ul li{
+  display: inline;
+  padding: 10px;
+  padding-bottom: 0px;
+}
+
+footer ul li img{
+  max width: 30px;
+  transition: all .2s ease;
+}
+
+/*Media queries*/
+@media (max-width: 768px) {
+  nav {
+    text-align: center;
+    padding: 20px 0;
+  }
+  nav ul {
+    float: none;
+  }
+
+  .features article {
+    width: 100%;
+    display: block;
+  }
+
+  .mockup img {
+    max-width: 100%;
+  }
+
+}
